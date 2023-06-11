@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="Image/20221030_221120_0000.png" rel="icon">
+  <title>The Mysterious Production</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/67df37e3d0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="contact.php"></script>
+  <script src="q/script.js"></script>
+  <script src="https://kit.fontawesome.com/67df37e3d0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="https://www.paypal.com/donate/?hosted_button_id=QCZMUZ529CHW8" class="donate-button">Faire un don</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h1>THE MYSTERIOUS PRODUCTION</h1>
+
+    <div class="video-sections">
+      <section class="video-section1">
+        <!-- contenu de la section 1 -->
+        <h2></h2>
+        <div class="video-info">
+          <span id="views-count" class="views-count">1K vues</span>
+        </div>
+        <video id="video-player1" class="video-player1" src="Vidéo/WATCH ME EDIT.mp4"></video>
+        <button class="play-button" onclick="toggleVideo(1)">Lire</button>
+        <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1" onchange="updateVolume(1)">
+        <progress id="progress-bar1" class="progress-bar" min="0" max="100" value="0"></progress>
+        <!--<a href="Vidéo/SOSEY - Deux À Deux (Official Video)" class="download-button" download>Télécharger</a>-->
+        <a href="https://www.paypal.com/donate/?hosted_button_id=QCZMUZ529CHW8" class="donate-button">Soutenir</a>
+      </section>
+      <section class="video-section2">
+        <!-- contenu de la section 8 -->
+        <h2></h2>
+        <div class="video-info">
+          <span id="views-count" class="views-count">16K vues</span>
+        </div>
+        <video id="video-player2" class="video-player2"src="Vidéo/Teaser _ photobook.mp4"></video>
+        <button class="play-button" onclick="toggleVideo(2)">Lire</button>
+        <input type="range" class="volume-slider" min="0" max="1" step="0.5" value="1" onchange="updateVolume(2)">
+        <progress id="progress-bar2" class="progress-bar" min="0" max="100" value="0"></progress>
+        <!--<a href="Vidéo/SOSEY - Deux À Deux (Official Video)" class="download-button" download>Télécharger</a>-->
+        <a href="https://www.paypal.com/donate/?hosted_button_id=QCZMUZ529CHW8" class="donate-button">Soutenir</a>
+      </section>
+    </div>
+  </div>
+  <div class="container">
+
+    <div class="video-sections">
+      <section class="video-section1">
+        <!-- contenu de la section 1 -->
+        <h2></h2>
+        <div class="video-info">
+          <span id="views-count" class="views-count">1K vues</span>
+        </div>
+        <video id="video-player3" class="video-player1" src="Vidéo/Teaser.mov"></video>
+        <button class="play-button" onclick="toggleVideo(3)">Lire</button>
+        <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1" onchange="updateVolume(3)">
+        <progress id="progress-bar3" class="progress-bar" min="0" max="100" value="0"></progress>
+        <!--<a href="Vidéo/SOSEY - Deux À Deux (Official Video)" class="download-button" download>Télécharger</a>-->
+        <a href="https://www.paypal.com/donate/?hosted_button_id=QCZMUZ529CHW8" class="donate-button">Soutenir</a>
+      </section>
+      <section class="video-section2">
+        <!-- contenu de la section 8 -->
+        <h2></h2>
+        <div class="video-info">
+          <span id="views-count" class="views-count">16K vues</span>
+        </div>
+        <video id="video-player4" class="video-player2"src="Vidéo/Teaser(2).mov"></video>
+        <button class="play-button" onclick="toggleVideo(4)">Lire</button>
+        <input type="range" class="volume-slider" min="0" max="1" step="0.5" value="1" onchange="updateVolume(4)">
+        <progress id="progress-bar4" class="progress-bar" min="0" max="100" value="0"></progress>
+        <!--<a href="Vidéo/SOSEY - Deux À Deux (Official Video)" class="download-button" download>Télécharger</a>-->
+        <a href="https://www.paypal.com/donate/?hosted_button_id=QCZMUZ529CHW8" class="donate-button">Soutenir</a>
+      </section>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="banner">
+      <video id="video1" preload="auto" muted loop width="1280" height="720">
+        <source src="Vidéo/Teaser _ photobook.mp4" type="video/mp4" bitrate="10000" minBitrate="9500">
+        <!-- Ajoutez d'autres sources vidéo avec des débits binaires différents -->
+      </video>
+
+      <video id="video2" preload="auto" muted loop width="1280" height="720">
+        <source src="Vidéo/PATERNE MAESTRO_Niaou na yo (Clip Officiel).mp4" type="video/mp4" bitrate="10000"
+          minBitrate="9500">
+        <!-- Ajoutez d'autres sources vidéo avec des débits binaires différents -->
+      </video>
+
+      <video id="video3" preload="auto" muted loop width="1280" height="720">
+        <source src="Vidéo/NIX OZAY - DIEU TE VOIT (CLIP OFFICIEL).mp4" type="video/mp4" bitrate="10000"
+          minBitrate="9500">
+        <!-- Ajoutez d'autres sources vidéo avec des débits binaires différents -->
+      </video>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <h1>NOS PRODUCTIONS MUSICALES</h1>
+    <p>Dans cette section, nous mettons en lumière l'essence même de notre production musicale. Chaque création musicale que nous concevons est guidée par des objectifs et des intentions spécifiques, créant ainsi une expérience sonore unique et significative.</p>
+    <p>Nous nous efforçons de capturer l'essence de l'émotion, de transmettre des histoires et de créer des connexions profondes à travers notre musique. Chaque morceau est soigneusement composé pour susciter des sensations, provoquer la réflexion et offrir une expérience auditive captivante.</p>
+    <p>Notre production musicale englobe une variété de styles, d'ambiances et d'influences. Nous explorons de nouveaux territoires sonores, mélangeant habilement les genres et repoussant les limites de la créativité musicale.</p>
+    <p>Nous collaborons étroitement avec des artistes talentueux, des musiciens et des ingénieurs du son pour donner vie à nos idées musicales. Chaque projet est une aventure artistique, où nous recherchons l'harmonie parfaite entre les instruments, les voix et les arrangements.</p>
+    <p>Nous sommes passionnés par la création de musiques d'ambiance évocatrices, de bandes sonores envoûtantes et de compositions personnalisées qui marquent les esprits. Notre objectif ultime est de faire vibrer les émotions de notre public et de créer des moments musicaux inoubliables.</p>
+    <p>Rejoignez-nous dans notre voyage musical et découvrez l'essence de notre production. Explorez ci-dessous quelques-unes de nos créations les plus récentes et laissez-vous emporter par l'expérience musicale que nous offrons.</p>
+    <p>Bienvenue dans notre univers musical, où les notes prennent vie et racontent des histoires uniques.</p>
+
+    
+  <br>
+  <br>
+  <br>
+  <br>
+    <div class="music-list">
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5eL0A8pNyYK1t6v0P9XSJb?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <!--<div class="music-item">
+        <img class="music-cover" src="Image/L2F 2.JPG.jpg" alt="ANBR - Stream Cover">
+        <h2 class="music-title">ANBR - Stream</h2>
+        <audio src="Music/Zbigopaïne.mp3" controls></audio>
+        <a href="https://www.paypal.com/donate/?hosted_button_id=QCZMUZ529CHW8" class="donate-button">Soutenir</a>
+        <div class="like-dislike-count">
+        </div>
+      </div>
+      <div class="music-item">
+        <img class="music-cover" src="Image/L2F 2.JPG.jpg" alt="ANBR - Stream Cover">
+        <h2 class="music-title">ANBR - Stream</h2>
+        <audio src="Music/Zbigopaïne.mp3" controls></audio>
+        <a href="https://www.paypal.com/donate/?hosted_button_id=QCZMUZ529CHW8" class="donate-button">Soutenir</a>
+        <div class="like-dislike-count">
+        </div>
+      </div>
+      <div class="music-item">
+        <img class="music-cover" src="Image/L2F 2.JPG.jpg" alt="ANBR - Stream Cover">
+        <h2 class="music-title">ANBR - Stream</h2>
+        <audio src="Music/Zbigopaïne.mp3" controls></audio>
+        <a href="https://www.paypal.com/donate/?hosted_button_id=QCZMUZ529CHW8" class="donate-button">Soutenir</a>
+      </div>
+      <div class="music-item">
+        <img class="music-cover" src="Image/L2F 2.JPG.jpg" alt="ANBR - Stream Cover">
+        <h2 class="music-title">ANBR - Stream</h2>
+        <audio src="Music/Zbigopaïne.mp3" controls></audio>
+        <a href="https://www.paypal.com/donate/?hosted_button_id=QCZMUZ529CHW8" class="donate-button">Soutenir</a>
+      </div>-->
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+          
+            
+            <!--
+            <form action="https://www.paypal.com/donate" method="post" target="_blank">
+              <input type="hidden" name="cmd" value="_donations">
+              <input type="hidden" name="business" value="mbeadivin56gmail.com">
+              <input type="hidden" name="currency_code" value="USD">
+              <input type="hidden" name="item_name" value="Donation">
+
+              <label for="amount">Montant du don :</label>
+              <input type="number" id="amount" name="amount" step="0.01" required>
+
+              <input type="submit" value="Faire un don">
+            </form>
+            -->
+      
+  
+  <footer>
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4>Liens utiles</h4>
+      <ul>
+        <li><a href="mailto:divinmbeaphotography@gmail.com.com?Infos&body=Bonjour je souhaiterai avoir quelques renseignements.">Booking</a></li>
+        <li><a href="https://themysterious-store.company.site/">The Mysterious Store</a></li>
+        <li><a href="https://themysteriousphotography.cf">The Mysterious Photography</a></li>
+        <li><a href="policy.html">Politique de confidentialité</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <p>Brazzaville, République du Congo</p>
+      <p class="lead mb-0"><span class="bold">Email</span> : themysteriousproduction@gmail.com<br>
+      <p>Téléphone : <a href="tel:+242066313798" style="color: #4fce53; text-decoration: none;">(+242) 06 631 37 98</a></p>
+      <br>
+      <br>
+      <h4>NOUS SOUTENIR</h4>
+              <p>1 Don = sauver une vie <br>
+              </p>
+               <a href="https://www.paypal.com/donate/?hosted_button_id=QCZMUZ529CHW8" class="donate-button">Faire un don</a>
+  <!--<div class="social-links">
+        <a href="https://www.facebook.com/The.mysterious.photography00/" target="_blank" class="social-link facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/the_mysterious_photography/" target="_blank" class="social-link instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@thmtv242" target="_blank" class="social-link tiktok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.youtube.com/votrepage" target="_blank" class="social-link youtube">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>-->
+    </div>
+    
+    <div class="footer-column">
+      <h4>Suivez-nous</h4>
+      <ul class="social-media-icons">
+        <li><a href="https://www.tiktok.com/@thmtv242"><i class="fab fa-tiktok"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCQChTEG7InWILbxuHH9Owww"><i class="fab fa-youtube"></i></a></li>
+        <li><a href="https://api.whatsapp.com/send/?phone=242066313798"><i class="fab fa-whatsapp"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>Tous droits réservés &copy; 2023 The Mysterious Production</p>
+  </div>
+</footer>
+
+</body>
+
+</html>
